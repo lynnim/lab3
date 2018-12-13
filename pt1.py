@@ -30,7 +30,7 @@ class Follower:
       #calculate the centriod
       cx = int(M['m10']/M['m00'])
       cy = int(M['m01']/M['m00'])
-      cv2.circle(image, (cx, cy), 4, (0,0,255), -1)
+      cv2.circle(image, (cx, cy), 6, (0,0,255), -1)
       # BEGIN CONTROL
       err = cx - w/2
       self.twist.linear.x = 0.2
